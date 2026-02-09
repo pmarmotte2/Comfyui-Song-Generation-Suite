@@ -1,0 +1,662 @@
+{
+  "id": "88ac5dad-efd7-40bb-84fe-fbaefdee1fa9",
+  "revision": 0,
+  "last_node_id": 139,
+  "last_link_id": 429,
+  "nodes": [
+    {
+      "id": 139,
+      "type": "SongGenerationSuite",
+      "pos": [
+        -892.7830175061874,
+        -59.85964931797259
+      ],
+      "size": [
+        400,
+        862
+      ],
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 423
+        }
+      ],
+      "outputs": [
+        {
+          "name": "conditioning",
+          "type": "CONDITIONING",
+          "links": [
+            424,
+            425
+          ]
+        },
+        {
+          "name": "latent_audio",
+          "type": "LATENT",
+          "links": [
+            426
+          ]
+        },
+        {
+          "name": "ACE_LANGUAGE",
+          "type": "STRING",
+          "links": null
+        },
+        {
+          "name": "TAGS",
+          "type": "STRING",
+          "links": [
+            427
+          ]
+        },
+        {
+          "name": "LYRICS",
+          "type": "STRING",
+          "links": [
+            428
+          ]
+        },
+        {
+          "name": "FULL_OUTPUT",
+          "type": "STRING",
+          "links": [
+            429
+          ]
+        },
+        {
+          "name": "PROMPT_USED",
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "SongGenerationSuite"
+      },
+      "widgets_values": [
+        "La chanson de Peter le rat qui voulait voler.\nLa chanson se termine par un accident.\nLe chorus doit toujours commencer par :\n« Peter, tu voulais voler mais un rat appartient à la terre ferme.\nTu rêvais des hauteurs, mais ce fut ta perte. »",
+        "Female",
+        "Hard Rock",
+        "",
+        "",
+        true,
+        "French",
+        443862463270625,
+        "randomize",
+        120,
+        180,
+        1,
+        "4",
+        "C major",
+        6,
+        "Qwen2.5-3B-Instruct",
+        "",
+        "None (FP16)",
+        "auto",
+        false,
+        "auto",
+        1100,
+        0.7,
+        0.9,
+        1,
+        1.1,
+        false
+      ]
+    },
+    {
+      "id": 124,
+      "type": "ShowText|pysssss",
+      "pos": [
+        -484.0145596130217,
+        -55.006205625169784
+      ],
+      "size": [
+        210,
+        431.0937365398977
+      ],
+      "flags": {},
+      "order": 6,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 429
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "shape": 6,
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "title": "Raw Ouput",
+      "properties": {
+        "cnr_id": "comfyui-custom-scripts",
+        "ver": "1.2.5",
+        "Node name for S&R": "ShowText|pysssss"
+      },
+      "widgets_values": [
+        "MUSIC PROMPT\nThe energetic and raw hard rock track features distorted guitars and heavy drums creating an intense atmosphere. Vocals soar with a powerful range and emotive intensity, perfectly suited to a female lead singer. The structure follows a straightforward verse-chorus pattern, with a dramatic drop during the solo bridge, building towards a climactic chorus. Production maintains clarity with subtle saturation, aiming for a clean yet impactful sound. The mood is dark and ominous, reflecting the tale of failure and misfortune.\n\nLyrics\n\n[Intro]\n(Nothing at the moment, to be filled later)\n[/Intro]\n\n[Verse 1]\nPeter, dans ton rêve, les étoiles brillaient haut,\nMais chaque pas sur la route te menait vers l'oubli.\nTon cœur battait fort, emporté par tes désirs,\nTout comme la poussière sous le soleil ardent.\n\n[Pre-Chorus]\nLes rues étroites t'étaient familières,\nUn rat, une promesse que tu n'avais jamais cru.\n\n[Chorus]\nPeter, tu voulais voler mais un rat appartient à la terre ferme.\nTu rêvais des hauteurs, mais ce fut ta perte.\n\n[Verse 2]\nDans la nuit, les ombres s'allongeaient sans fin,\nTes mains tremblaient face aux risques que tu devais prendre.\nLe vent soufflait fort, portant avec lui ton destin,\nEt chaque battement de ton cœur était un appel muet.\n\n[Pre-Chorus]\nLes nuits pluvieuses t'avaient fait taire,\nUn rat, une promesse que tu avais gardée.\n\n[Chorus]\nPeter, tu voulais voler mais un rat appartient à la terre ferme.\nTu rêvais des hauteurs, mais ce fut ta perte.\n\n[Solo or Bridge]\n(Instrumental)\n\n[Verse 3]\nLe temps filtrait entre les murs sombres,\nLes yeux clos, le silence pesait sur ta conscience.\nL'ombre enveloppait tout autour de toi,\nEt chaque bruit de la ville semblait taire.\n\n[Pre-Chorus]\nLes ruelles étroites t'étaient familières,\nUn rat, une promesse que tu n'avais jamais cru.\n\n[Chorus]\nPeter, tu voulais voler mais un rat appartient à la terre ferme.\nTu rêvais des hauteurs, mais ce fut ta perte.\n\n[Outro]\nLa lumière du jour déchirait la noirceur,\nTes pensées tourbillonnaient, errantes et désespérées.\nPeter, tu voulais voler, mais la réalité te ramena,\nEt la terre ferme t'a englouti, dans cette chute infinie.\n\nEnd"
+      ]
+    },
+    {
+      "id": 115,
+      "type": "ShowText|pysssss",
+      "pos": [
+        -264.2866204915725,
+        -65.49505795365445
+      ],
+      "size": [
+        210,
+        448.40298590165685
+      ],
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 427
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "shape": 6,
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "title": "Music Prompt",
+      "properties": {
+        "cnr_id": "comfyui-custom-scripts",
+        "ver": "1.2.5",
+        "Node name for S&R": "ShowText|pysssss"
+      },
+      "widgets_values": [
+        "The energetic and raw hard rock track features distorted guitars and heavy drums creating an intense atmosphere. Vocals soar with a powerful range and emotive intensity, perfectly suited to a female lead singer. The structure follows a straightforward verse-chorus pattern, with a dramatic drop during the solo bridge, building towards a climactic chorus. Production maintains clarity with subtle saturation, aiming for a clean yet impactful sound. The mood is dark and ominous, reflecting the tale of failure and misfortune."
+      ]
+    },
+    {
+      "id": 116,
+      "type": "ShowText|pysssss",
+      "pos": [
+        -478.8426762540799,
+        416.04274768041313
+      ],
+      "size": [
+        543.1988310038967,
+        551.1488055173435
+      ],
+      "flags": {},
+      "order": 5,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 428
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "shape": 6,
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "title": "Lyrics",
+      "properties": {
+        "cnr_id": "comfyui-custom-scripts",
+        "ver": "1.2.5",
+        "Node name for S&R": "ShowText|pysssss"
+      },
+      "widgets_values": [
+        "[Intro]\n(Nothing at the moment, to be filled later)\n\n[Verse 1]\nPeter, dans ton rêve, les étoiles brillaient haut,\nMais chaque pas sur la route te menait vers l'oubli.\nTon cœur battait fort, emporté par tes désirs,\nTout comme la poussière sous le soleil ardent.\n\nLes rues étroites t'étaient familières,\nUn rat, une promesse que tu n'avais jamais cru.\n[Chorus]\nPeter, tu voulais voler mais un rat appartient à la terre ferme.\nTu rêvais des hauteurs, mais ce fut ta perte.\n\n[Verse 2]\nDans la nuit, les ombres s'allongeaient sans fin,\nTes mains tremblaient face aux risques que tu devais prendre.\nLe vent soufflait fort, portant avec lui ton destin,\nEt chaque battement de ton cœur était un appel muet.\n\nLes nuits pluvieuses t'avaient fait taire,\nUn rat, une promesse que tu avais gardée.\n[Chorus]\nPeter, tu voulais voler mais un rat appartient à la terre ferme.\nTu rêvais des hauteurs, mais ce fut ta perte.\n\n[Solo or Bridge]\n(Instrumental)\n\nLe temps filtrait entre les murs sombres,\nLes yeux clos, le silence pesait sur ta conscience.\nL'ombre enveloppait tout autour de toi,\nEt chaque bruit de la ville semblait taire.\n\nLes ruelles étroites t'étaient familières,\nUn rat, une promesse que tu n'avais jamais cru.\n[Chorus]\nPeter, tu voulais voler mais un rat appartient à la terre ferme.\nTu rêvais des hauteurs, mais ce fut ta perte.\n\n[Outro]\nLa lumière du jour déchirait la noirceur,\nTes pensées tourbillonnaient, errantes et désespérées.\nPeter, tu voulais voler, mais la réalité te ramena,\nEt la terre ferme t'a englouti, dans cette chute infinie.\n\nEnd"
+      ]
+    },
+    {
+      "id": 97,
+      "type": "CheckpointLoaderSimple",
+      "pos": [
+        -897.702787640071,
+        -196.51760818976305
+      ],
+      "size": [
+        428.09895833333337,
+        98
+      ],
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            247
+          ]
+        },
+        {
+          "name": "CLIP",
+          "type": "CLIP",
+          "links": [
+            423
+          ]
+        },
+        {
+          "name": "VAE",
+          "type": "VAE",
+          "links": [
+            248
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.11.1",
+        "Node name for S&R": "CheckpointLoaderSimple",
+        "models": [
+          {
+            "name": "ace_step_1.5_turbo_aio.safetensors",
+            "url": "https://huggingface.co/Comfy-Org/ace_step_1.5_ComfyUI_files/resolve/main/checkpoints/ace_step_1.5_turbo_aio.safetensors",
+            "directory": "checkpoints"
+          }
+        ],
+        "enableTabs": false,
+        "tabWidth": 65,
+        "tabXOffset": 10,
+        "hasSecondTab": false,
+        "secondTabText": "Send Back",
+        "secondTabOffset": 80,
+        "secondTabWidth": 65
+      },
+      "widgets_values": [
+        "ace_step_1.5_turbo_aio.safetensors"
+      ]
+    },
+    {
+      "id": 78,
+      "type": "ModelSamplingAuraFlow",
+      "pos": [
+        -44.248530910584314,
+        -62.525788319610704
+      ],
+      "size": [
+        330,
+        60
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 247
+        }
+      ],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            175
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.11.1",
+        "Node name for S&R": "ModelSamplingAuraFlow",
+        "enableTabs": false,
+        "tabWidth": 65,
+        "tabXOffset": 10,
+        "hasSecondTab": false,
+        "secondTabText": "Send Back",
+        "secondTabOffset": 80,
+        "secondTabWidth": 65
+      },
+      "widgets_values": [
+        3
+      ]
+    },
+    {
+      "id": 3,
+      "type": "KSampler",
+      "pos": [
+        -41.5918483757372,
+        38.79407049855751
+      ],
+      "size": [
+        329.38802083333337,
+        262
+      ],
+      "flags": {},
+      "order": 7,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 175
+        },
+        {
+          "name": "positive",
+          "type": "CONDITIONING",
+          "link": 424
+        },
+        {
+          "name": "negative",
+          "type": "CONDITIONING",
+          "link": 119
+        },
+        {
+          "name": "latent_image",
+          "type": "LATENT",
+          "link": 426
+        }
+      ],
+      "outputs": [
+        {
+          "name": "LATENT",
+          "type": "LATENT",
+          "slot_index": 0,
+          "links": [
+            256
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.11.1",
+        "Node name for S&R": "KSampler",
+        "enableTabs": false,
+        "tabWidth": 65,
+        "tabXOffset": 10,
+        "hasSecondTab": false,
+        "secondTabText": "Send Back",
+        "secondTabOffset": 80,
+        "secondTabWidth": 65
+      },
+      "widgets_values": [
+        31,
+        "fixed",
+        30,
+        1,
+        "euler",
+        "simple",
+        1
+      ]
+    },
+    {
+      "id": 47,
+      "type": "ConditioningZeroOut",
+      "pos": [
+        -37.51172018119961,
+        343.87479491147343
+      ],
+      "size": [
+        234.01171875,
+        26
+      ],
+      "flags": {
+        "collapsed": true
+      },
+      "order": 3,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "conditioning",
+          "type": "CONDITIONING",
+          "link": 425
+        }
+      ],
+      "outputs": [
+        {
+          "name": "CONDITIONING",
+          "type": "CONDITIONING",
+          "links": [
+            119
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.11.1",
+        "Node name for S&R": "ConditioningZeroOut",
+        "enableTabs": false,
+        "tabWidth": 65,
+        "tabXOffset": 10,
+        "hasSecondTab": false,
+        "secondTabText": "Send Back",
+        "secondTabOffset": 80,
+        "secondTabWidth": 65
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 18,
+      "type": "VAEDecodeAudio",
+      "pos": [
+        297.88505735609283,
+        -60.27105055629237
+      ],
+      "size": [
+        190,
+        46
+      ],
+      "flags": {
+        "collapsed": false
+      },
+      "order": 8,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "samples",
+          "type": "LATENT",
+          "link": 256
+        },
+        {
+          "name": "vae",
+          "type": "VAE",
+          "link": 248
+        }
+      ],
+      "outputs": [
+        {
+          "name": "AUDIO",
+          "type": "AUDIO",
+          "links": [
+            260
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.11.1",
+        "Node name for S&R": "VAEDecodeAudio",
+        "enableTabs": false,
+        "tabWidth": 65,
+        "tabXOffset": 10,
+        "hasSecondTab": false,
+        "secondTabText": "Send Back",
+        "secondTabOffset": 80,
+        "secondTabWidth": 65
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 104,
+      "type": "SaveAudioMP3",
+      "pos": [
+        297.95877524016925,
+        33.80798263988681
+      ],
+      "size": [
+        574.7480299779218,
+        349.4841112735518
+      ],
+      "flags": {},
+      "order": 9,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "audio",
+          "type": "AUDIO",
+          "link": 260
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.11.1",
+        "Node name for S&R": "SaveAudioMP3",
+        "enableTabs": false,
+        "tabWidth": 65,
+        "tabXOffset": 10,
+        "hasSecondTab": false,
+        "secondTabText": "Send Back",
+        "secondTabOffset": 80,
+        "secondTabWidth": 65
+      },
+      "widgets_values": [
+        "audio/ComfyUI",
+        "V0"
+      ]
+    }
+  ],
+  "links": [
+    [
+      119,
+      47,
+      0,
+      3,
+      2,
+      "CONDITIONING"
+    ],
+    [
+      175,
+      78,
+      0,
+      3,
+      0,
+      "MODEL"
+    ],
+    [
+      247,
+      97,
+      0,
+      78,
+      0,
+      "MODEL"
+    ],
+    [
+      248,
+      97,
+      2,
+      18,
+      1,
+      "VAE"
+    ],
+    [
+      256,
+      3,
+      0,
+      18,
+      0,
+      "LATENT"
+    ],
+    [
+      260,
+      18,
+      0,
+      104,
+      0,
+      "AUDIO"
+    ],
+    [
+      423,
+      97,
+      1,
+      139,
+      0,
+      "CLIP"
+    ],
+    [
+      424,
+      139,
+      0,
+      3,
+      1,
+      "CONDITIONING"
+    ],
+    [
+      425,
+      139,
+      0,
+      47,
+      0,
+      "CONDITIONING"
+    ],
+    [
+      426,
+      139,
+      1,
+      3,
+      3,
+      "LATENT"
+    ],
+    [
+      427,
+      139,
+      3,
+      115,
+      0,
+      "STRING"
+    ],
+    [
+      428,
+      139,
+      4,
+      116,
+      0,
+      "STRING"
+    ],
+    [
+      429,
+      139,
+      5,
+      124,
+      0,
+      "STRING"
+    ]
+  ],
+  "groups": [],
+  "config": {},
+  "extra": {
+    "ds": {
+      "scale": 0.8586318407962558,
+      "offset": [
+        1364.0714015861568,
+        415.79139239203874
+      ]
+    },
+    "frontendVersion": "1.37.11",
+    "workflowRendererVersion": "LG",
+    "VHS_latentpreview": false,
+    "VHS_latentpreviewrate": 0,
+    "VHS_MetadataImage": true,
+    "VHS_KeepIntermediate": true
+  },
+  "version": 0.4
+}
