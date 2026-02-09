@@ -1,0 +1,14 @@
+# Core LLM deps (prompt + lyrics generation)
+transformers>=4.41.0
+huggingface_hub>=0.23.0
+safetensors>=0.4.3
+
+# Runtime
+torch
+
+# Optional but recommended (better loading, performance, and some model configs)
+accelerate>=0.31.0
+sentencepiece>=0.2.0
+
+# Optional quantization support (may be platform-dependent, especially on Windows)
+bitsandbytes>=0.43.0
